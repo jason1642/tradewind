@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Newsreader } from "next/font/google";
 import QueryProvider from "./QueryProvider";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 import "./globals.css";
+import AnnouncementBar from "./components/layout/AnnouncementBar";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const newsreader = Newsreader({
@@ -24,7 +25,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <QueryProvider>
+          <AnnouncementBar />
           <Header />
+
           {children}
           <Footer />
         </QueryProvider>
