@@ -24,5 +24,5 @@ export const productsQuery = (filters: { category?: string; page?: number }) =>
 export const productQuery = (id: string | number) =>
   queryOptions({
     queryKey: ["product", id],
-    queryFn: () => api<ProductTypes>(`/api/products/${id}`),
+    queryFn: () => api<ProductTypes>(`/api/products/${id}/`),
   });
