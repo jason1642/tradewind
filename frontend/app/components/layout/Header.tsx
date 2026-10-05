@@ -17,7 +17,7 @@ const Header = () => {
       </div>
 
       <Button
-        className={"border-0 text-sm w-auto! bg-transparent!"}
+        className={"border-0 text-sm w-auto! bg-transparent! text-ink"}
         type="button"
         // onClick={() => {
         //   console.log("cart icon clicked");
