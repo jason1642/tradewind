@@ -4,5 +4,9 @@ export interface ProductTypes {
   description: string;
   price: string;
   stock: number;
-  category: number;
+  category: {
+    id: number;
+    name: string;
+    slug: string;
+  };
 }
