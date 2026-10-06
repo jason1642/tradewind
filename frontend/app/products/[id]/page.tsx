@@ -33,7 +33,7 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
             <AccordianInfo product={data} />
           </div>
         </div>
-        <Button />
+        {/* <Button /> */}
       </main>
     </HydrationBoundary>
   );
