@@ -30,6 +30,7 @@ const ProductHeader = ({ product }: { product: ProductTypes }) => {
       {product.description && (
         <p className="mt-6.5 mb-5 max-w-102 font-serif text-[19px] leading-[1.6] text-body">
           {product.description}
+          {product.description}
         </p>
       )}
     </div>

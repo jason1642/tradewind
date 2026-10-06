@@ -9,6 +9,7 @@ import ProductGallery from "./_components/ProductGallery";
 import ProductHeader from "./_components/ProductHeader";
 import PriceBlock from "./_components/PriceBlock";
 import VariantSelector from "./_components/VariantSelector";
+import PurchaseActions from "./_components/PurchaseActions";
 
 const page = async ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = await params;
@@ -21,10 +22,11 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
         <div className="grid gap-10 pb-24 lg:grid-cols-[4fr_3fr] lg:gap-x-16 xl:gap-x-24">
           {/* <div className="border border-2">product gallery placeholder</div> */}
           <ProductGallery />
-          <div className="flex flex-col border">
+          <div className="flex flex-col  pt-3">
             <ProductHeader product={data} />
             <PriceBlock product={data} />
             <VariantSelector product={data} />
+            <PurchaseActions product={data} />
           </div>
         </div>
         <Button />

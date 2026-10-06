@@ -1,0 +1,31 @@
+/* PurchaseActions.tsx */
+.addToCartButton {
+  background-color: var(--color-forest);
+  height: 49px;
+  width: 100%;
+  padding: 0 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  border: 0;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.addToCartButton:hover {
+  background: #3d4a3e;
+}
+.addToCartButton span {
+  font-size: 11px;
+  color: #d4ddcf;
+}
+.saveButton {
+  display: block;
+  margin: 12px auto 21px;
+  border: 0;
+  background: none;
+  color: #62675e;
+  font-size: 11px;
+  cursor: pointer;
+}
