@@ -7,6 +7,8 @@ import { productQuery } from "@/app/lib/queries/products";
 import Button from "@/app/components/ui/Button";
 import ProductGallery from "./_components/ProductGallery";
 import ProductHeader from "./_components/ProductHeader";
+import PriceBlock from "./_components/PriceBlock";
+import VariantSelector from "./_components/VariantSelector";
 
 const page = async ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = await params;
@@ -15,12 +17,14 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <main className="mx-auto w-full max-w-[1400px] px-6">
+      <main className="mx-auto w-full max-w-350 px-6">
         <div className="grid gap-10 pb-24 lg:grid-cols-[4fr_3fr] lg:gap-x-16 xl:gap-x-24">
           {/* <div className="border border-2">product gallery placeholder</div> */}
           <ProductGallery />
-          <div className="flex flex-col border border-2">
+          <div className="flex flex-col border">
             <ProductHeader product={data} />
+            <PriceBlock product={data} />
+            <VariantSelector product={data} />
           </div>
         </div>
         <Button />
