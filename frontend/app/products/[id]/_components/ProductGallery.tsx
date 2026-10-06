@@ -7,6 +7,7 @@ const ProductGallery = () => {
     <div className="flex flex-col relative">
       {/* <div className="w-full h-full bg-gray-800 absolute top-1 left-1"></div> */}
       {/* Main content */}
+
       <div className={styles.heroVisual}>
         <span className={styles.visualTag}>Best Noise Cancellation</span>
         <span className={styles.visualIndex}>
