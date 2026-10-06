@@ -10,7 +10,7 @@ const PLACEHOLDER = {
 const ProductHeader = ({ product }: { product: ProductTypes }) => {
   console.log(product);
   return (
-    <div className="flex flex-col max-w-111.25 pt-3">
+    <div className="flex flex-col w-full pt-3">
       <div className="flex items-center justify-between gap-4">
         <span>{product.category.name}</span>
         <div className="flex items-center gap-2 text-xs text-muted">
@@ -22,7 +22,7 @@ const ProductHeader = ({ product }: { product: ProductTypes }) => {
         </div>
       </div>
       <h1 className="mt-6 font-serif text-5xl font-normal leading-[1.05] tracking-tight text-ink lg:text-[64px] ">
-        {/* {product.name} */} Air Pod Max
+        {/* {product.name} */} Air Pods Max
       </h1>
 
       <p className="mt-3 text-sm text-muted">{PLACEHOLDER.tagline}</p>

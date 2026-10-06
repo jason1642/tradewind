@@ -11,7 +11,14 @@ const options = [
 const VariantSelector = ({ product }: { product: ProductTypes }) => {
   return (
     <div>
-      Choose a color
+      {/* Options heading */}
+      <div className="flex justify-between text-eyebrow text-[#51564d]">
+        <span>Choose a color</span>
+        <span>{options[0].name}</span>
+      </div>
+
+      {/* radio buttons, should allow user to change product variant to display different information 
+      across this page and change eyebrow color text on right side */}
       <div
         className="flex gap-3 mt-3.75 mb-6.25"
         role="radiogroup"

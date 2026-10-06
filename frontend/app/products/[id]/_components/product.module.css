@@ -29,3 +29,79 @@
   font-size: 11px;
   cursor: pointer;
 }
+
+/* Perks component */
+
+.perks {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border: 1px solid black;
+  padding: 15px 0;
+  gap: 12px;
+}
+.perks > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.perks > div > span {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #e3e3da;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #71806c;
+  font-size: 13px;
+}
+.perks p {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+}
+.perks b {
+  font-size: 10px;
+  font-weight: 500;
+}
+.perks small {
+  font-size: 9px;
+  color: #85887d;
+}
+
+/* Accordian dropdown info section  */
+
+.accordions {
+  margin-top: 9px;
+}
+.accordions details {
+  border-bottom: 1px solid var(--line);
+}
+.accordions summary {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+  font-family: Georgia, serif;
+  font-size: 13px;
+}
+.accordions summary::-webkit-details-marker {
+  display: none;
+}
+.accordions summary span {
+  font-family: Arial, sans-serif;
+  color: #788073;
+  font-size: 15px;
+}
+.accordions details p {
+  max-width: 390px;
+  margin: 0;
+  padding: 0 24px 16px 0;
+  color: #767a70;
+  font-size: 11px;
+  line-height: 1.65;
+}
